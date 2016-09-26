@@ -1,11 +1,11 @@
 var React=require('react');
 
-var LoginPage=React.createClass({
+var RegisterPage=React.createClass({
 	render:function(){
 		return(
 			<div>
 				<div>
-					<h1>Welcome</h1>
+					<h1>Create account</h1>
 				</div>
 				<form>
 					<div>
@@ -17,7 +17,15 @@ var LoginPage=React.createClass({
 							<label for="password">Password  </label>
 							<input type="password" id="password"/>
 						</div>
-						<button type="button">Login</button> 
+						<div>
+							<label for="passwordTwice">Enter password again </label>
+							<input type="password" id="passwordTwice"/>
+						</div>
+						<div>
+							<label for="email">Email  </label>
+							<input type="text" id="email"/>
+						</div>
+						<button type="button">Sign up</button> 
 					</div>
 				</form>
 			</div>
@@ -25,4 +33,4 @@ var LoginPage=React.createClass({
 	}
 });
 
-module.exports=LoginPage;
+module.exports=RegisterPage;

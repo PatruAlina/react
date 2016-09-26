@@ -7,6 +7,7 @@ var AppBaseView=require('./app/layout');
 var NotFoundView=require('./404/layout');
 var HomeView=require('./home/layout');
 var LoginView=require('./login/layout');
+var RegisterView=require('./register/layout');
 
 
 var routes=(
@@ -14,6 +15,7 @@ var routes=(
 		<NotFoundRoute handler={NotFoundView} />
 		<DefaultRoute handler={HomeView} />
 		<Route name="login" handler={LoginView} />
+		<Route name="register" handler={RegisterView} />
 	</Route>
 );
 
